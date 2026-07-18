@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="am">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>ዮናስ ሞህ — Yonas Moh</title>
+<meta name="description" content="ዮናስ ሞህ — በአርቲፊሻል ኢንተለጀንስ፣ በኮዲንግ እና በዲጂታል ምርታምነት ላይ የሚያተኩር የቴክኖሎጂ ይዘት አዘጋጅ።">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Ethiopic:wght@400;500;700;900&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="timeline-bar" aria-hidden="true">
+    <div class="timeline-bar__fill" id="timelineFill"></div>
+    <div class="timeline-bar__markers" id="timelineMarkers"></div>
+</div>
+
+<header class="site-header">
+    <a href="#home" class="site-header__logo">YONAS<span>MOH</span></a>
+
+    <div class="site-header__deck">
+        <span class="rec-tag"><span class="rec-tag__dot"></span>REC</span>
+        <span class="timecode" id="timecode">00:00:00</span>
+    </div>
+
+    <nav class="site-header__nav" id="siteNav">
+        <a href="#home" data-nav>Home</a>
+        <a href="#about" data-nav>About</a>
+        <a href="#speaking" data-nav>Speaking</a>
+        <a href="#contact" data-nav>Contact</a>
+    </nav>
+
+    <button class="nav-toggle" id="navToggle" aria-label="ማውጫ ክፈት / Open menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+    </button>
+</header>
+
+<div class="video-background">
+    <video autoplay muted loop playsinline id="bg-video" aria-hidden="true">
+        <source src="yonas.mp4" type="video/mp4">
+    </video>
+    <div class="video-background__grain"></div>
+    <div class="video-background__vignette"></div>
+</div>
+
+<main class="content-wrapper">
+
+    <section id="home" class="hero">
+        <p class="hero__eyebrow">Yonile Communications · Marketing Agency · Founder And CEO </p>
+        <h1 class="hero__title">ዮናስ ሞህ</h1>
+        <p class="hero__subtitle">በዲጂታል ቢዝነስ፣ ከፍተኛ ገቢ የሚያስገቡ ክህሎቶች፣ ራስን ማሻሻል እና ስራ ፈጠራ ላይ ያተኮረ የይዘት አዘጋጅ</p>
+
+        <a href="#about" class="scroll-cue" aria-label="ወደ ታች ይሸብልሉ">
+            <span class="scroll-cue__label">ስክሮል ያድርጉ</span>
+            <span class="scroll-cue__line"><span class="scroll-cue__head"></span></span>
+        </a>
+    </section>
+
+    <section id="about" class="chapter" aria-labelledby="aboutHeading">
+        <p class="chapter__eyebrow">ምዕራፍ 01 — ስለ እኔ</p>
+
+        <div class="bio-panel">
+            <div class="bio-panel__media">
+                <div class="bio-panel__ring">
+                    <!-- የፋይል ስም ስህተት ተስተካክሏል (yoni1.jpg) -->
+                    <img src="yoni1.png" alt="የዮናስ ሞህ ፎቶ" class="bio-panel__photo">
+                </div>
+            </div>
+
+            <div class="bio-panel__body">
+                <h2 id="aboutHeading" class="chapter__title">ስለ ዮናስ ሞህ</h2>
+                <p class="bio-panel__text">ዮናስ ሞህ የይዘት አዘጋጅነት ጉዞውን የጀመረው በዩኒቨርሲቲ ተማሪነቱ፣ የገንዘብ ችግር እየገጠመው በነበረበት ወቅት ነው። በ4ኛ ዓመት ትምህርቱ የመጀመሪያውን ሶሻል ሚዲያ ማርኬቲንግ ኤጀንሲ (SMMA) ከፈተ፤ ይህም ኤጀንሲ ወደ 70,000 ብር በወር ትርፍ እስከማስገኘት ደርሶ ነበር። በ5ኛ ዓመቱ ደግሞ የራሱን ዲጂታል ማስታወቂያ እና ሚዲያ ኩባንያ — Yonile Digitals (Yonile Communications) — መስርቶ ገና በ24 ዓመቱ ከ Safaricom፣ DSTV እና Canal+ ጋር ባለ ብዙ ሚሊዮን ብር ኮንትራቶችን በመተባበር ሰርቷል። ዛሬ ቻናሉ በኢትዮጵያ ውስጥ ዘመናዊ የስራ ክህሎት ለመገንባት ለሚፈልጉ ተማሪዎችና ወጣቶች ተግባራዊ ትምህርት ያቀርባል።</p>
+
+                <div class="stat-strip">
+                    <div class="stat"><span class="stat__num">525,000+</span><span class="stat__label">ደንበኞች</span></div>
+                    <div class="stat"><span class="stat__num">780+</span><span class="stat__label">ቪዲዮዎች</span></div>
+                    <div class="stat"><span class="stat__num">70,000 ብር</span><span class="stat__label">የመጀመሪያ SMMA ወርሃዊ ትርፍ</span></div>
+                </div>
+
+                <a href="https://www.youtube.com/@yonasmoh" target="_blank" rel="noopener" class="btn-youtube">
+                    <svg viewBox="0 0 24 24" width="20" height="20" aria-hidden="true"><path fill="currentColor" d="M21.6 7.2s-.21-1.5-.87-2.16c-.83-.87-1.76-.87-2.19-.92C15.44 4 12 4 12 4h-.01s-3.44 0-6.53.12c-.43.05-1.36.05-2.19.92C2.6 5.7 2.4 7.2 2.4 7.2S2.18 9 2.18 10.75v1.49c0 1.76.22 3.55.22 3.55s.2 1.5.86 2.16c.83.87 1.92.84 2.4.93 1.75.17 7.42.22 7.42.22s3.44 0 6.53-.12c.43-.06 1.36-.06 2.19-.93.66-.66.87-2.16.87-2.16s.22-1.78.22-3.55v-1.49c0-1.75-.22-3.55-.22-3.55zM9.98 14.6V8.9l5.4 2.86-5.4 2.85z"/></svg>
+                    <span>የዩቲዩብ ቻናል ይክፈቱ</span>
+                </a>
+            </div>
+        </div>
+
+        <div class="chapters-grid">
+            <article class="chapter-card">
+                <span class="chapter-card__code">00:00</span>
+                <svg class="chapter-card__icon" viewBox="0 0 24 24" width="26" height="26" aria-hidden="true"><path fill="none" stroke="currentColor" stroke-width="1.6" d="M4 19V10M9.5 19V6M15 19v-8M20 19V4"/></svg>
+                <h3>ቢዝነስ እና ገቢ ማስገኛ</h3>
+                <p>ከዜሮ ጀምሮ ዲጂታል ቢዝነስ እንዴት እንደሚጀመር በደረጃ የሚያሳዩ ትምህርቶች — ፍሪላንስ ፕሮፋይል፣ ዲጂታል ማርኬቲንግ እና SMMA。</p>
+            </article>
+
+            <article class="chapter-card">
+                <span class="chapter-card__code">05:20</span>
+                <svg class="chapter-card__icon" viewBox="0 0 24 24" width="26" height="26" aria-hidden="true"><path fill="none" stroke="currentColor" stroke-width="1.6" d="m4 20 6.5-6.5M13 7l4 4-8.5 8.5H4.5V15z"/></svg>
+                <h3>ከፍተኛ ገቢ የሚያስገኙ ክህሎቶች</h3>
+                <p>የቪዲዮ ኤዲቲንግ፣ ግራፊክ ዲዛይን እና የይዘት አዘገጃጀት ተግባራዊ ትምህርቶች。</p>
+            </article>
+
+            <article class="chapter-card">
+                <span class="chapter-card__code">11:45</span>
+                <svg class="chapter-card__icon" viewBox="0 0 24 24" width="26" height="26" aria-hidden="true"><circle cx="12" cy="12" r="8.5" fill="none" stroke="currentColor" stroke-width="1.6"/><circle cx="12" cy="12" r="4.5" fill="none" stroke="currentColor" stroke-width="1.6"/><circle cx="12" cy="12" r="1" fill="currentColor"/></svg>
+                <h3>አስተሳሰብ እና ራስን ማሻሻል</h3>
+                <p>መዘግየትን ማሸነፍ፣ ዲሲፕሊን መገንባት፣ ጊዜን በአግባቡ መጠቀም እና ጤናማ ያልሆነ የሶሻል ሚዲያ ልማድን መስበር።</p>
+            </article>
+
+            <article class="chapter-card">
+                <span class="chapter-card__code">18:30</span>
+                <svg class="chapter-card__icon" viewBox="0 0 24 24" width="26" height="26" aria-hidden="true"><rect x="4" y="6" width="12" height="9" rx="1.5" fill="none" stroke="currentColor" stroke-width="1.6"/><path fill="none" stroke="currentColor" stroke-width="1.6" d="m16 9.5 4-2.5v9l-4-2.5"/></svg>
+                <h3>የአኗኗር ዘይቤ እና ትብብሮች</h3>
+                <p>የስራ ፈጠራ ዕለታዊ እንቅስቃሴውን የሚያሳዩ ቭሎጎች፣ እና ከሌሎች የኢትዮጵያ ይዘት አዘጋጆች ጋር ረዣዥም የፖድካስት ውይይቶች።</p>
+            </article>
+        </div>
+    </section>
+
+    <section id="ecosystem" class="chapter" aria-labelledby="ecosystemHeading">
+        <p class="chapter__eyebrow">ምዕራፍ 02 — ስነ-ምህዳር</p>
+        <h2 id="ecosystemHeading" class="chapter__title">ከዩቲዩብ ባሻገር</h2>
+
+        <div class="ecosystem-grid">
+            <article class="ecosystem-card">
+                <span class="ecosystem-card__tag">ምዝገባ ክፍት ነው</span>
+                <h3>Khilx Academy</h3>
+                <p>ዮናስ የመሰረተው E-Learning መድረክ፤ ወጣቶች ዲጂታል ቢዝነስ ክህሎት እንዲገነቡ ደረጃ በደረጃ ኮርሶች እና ቡት ካምፖችን ያቀርባል። ተማሪዎች ሲመዘገቡ ነጠላ ኮርስ ብቻ ሳይሆን፣ ለምሳሌ የቪዲዮ ኤዲቲንግን ከደንበኛ ማፈላለግ፣ ከሶፍት ስኪልስ እና ፐርሶናል ብራንዲንግ ጋር የሚያዋህድ የ4 ኮርሶች ጥቅል በአንድ ጊዜ ያገኛሉ። ከፍተኛ ውጤት ላመጡ ተማሪዎች ደግሞ በዮናስ የሚዲያ ስራዎች ላይ በቀጥታ የሚሳተፉበት የኢንተርንሺፕ እድሎችን በተደጋጋሚ ያዘጋጃል።</p>
+                <div class="ecosystem-card__links">
+                    <a href="https://khilx.academy" target="_blank" rel="noopener" class="ecosystem-card__link">አካዳሚውን ይጎብኙ →</a>
+                    <a href="https://kitet.khilx.academy" target="_blank" rel="noopener" class="ecosystem-card__link ecosystem-card__link--alt">ክተት በክረምት — ይመዝገቡ →</a>
+                </div>
+            </article>
+
+            <article class="ecosystem-card">
+                <span class="ecosystem-card__tag">የክረምት ቡት ካምፕ</span>
+                <h3>ክተት በክረምት (Kitet beKremt)</h3>
+                <p>ከኢትዮጵያ የትምህርት ካላንደር ጋር የሚሄድ 12 ሳምንት የክረምት ቡት ካምፕ፤ ለሁለተኛ ደረጃ እና ለዩኒቨርሲቲ ተማሪዎች ተብሎ የተዘጋጀ ነው። ግቡ ተማሪዎች የቪዲዮ ኤዲቲንግ ወይም ግራፊክ ዲዛይን የመሳሰሉ ክህሎቶችን ከመማር አልፈው፣ በተወሰነ አጭር ጊዜ ውስጥ በዲጂታል መድረኮች ወይም በአካባቢ ደንበኞች ገቢ ማስገኘት እንዲጀምሩ መርዳት ነው።</p>
+                <a href="https://kitet.khilx.academy" target="_blank" rel="noopener" class="ecosystem-card__link">ስለ ክተት በክረምት ይመልከቱ →</a>
+            </article>
+
+            <article class="ecosystem-card">
+                <h3>Yonas Moh Business</h3>
+                <p>የላቀ የማርኬቲንግ ስትራቴጂ፣ ደንበኛ ማፈላለግ እና የስራ አሰራር ብቻ ላይ የሚያተኩር ሁለተኛ ቻናል።</p>
+                <!-- የፋይል ስም ስህተት እና id ተስተካክሏል -->
+                <img src="yoni5.png" alt="Yonas Moh Business Layout" id="cpng" class="ecosystem-img">
+                <a href="https://www.youtube.com/@yonasmohbusiness" target="_blank" rel="noopener" class="ecosystem-card__link">ቻናሉን ይመልከቱ →</a>
+            </article>
+
+            <article class="ecosystem-card">
+                <h3>Moh-Anbessa</h3>
+                <p>ዮናስ በቀጥታ ጥያቄና መልስ እንዲሁም ዕለታዊ ምክሮችን የሚያካፍልበት ትልቅ የቴሌግራም ማህበረሰብ።</p>
+                <a href="https://t.me/mohanbessa" target="_blank" rel="noopener" class="ecosystem-card__link">ማህበረሰቡን ይቀላቀሉ →</a>
+            </article>
+        </div>
+    </section>
+
+    <section id="speaking" class="chapter" aria-labelledby="speakingHeading">
+        <p class="chapter__eyebrow">ምዕራፍ 03 — መድረክ ላይ</p>
+        <h2 id="speakingHeading" class="chapter__title">የህዝብ ንግግር እና መገኘት</h2>
+
+        <div class="bio-panel">
+            <div class="bio-panel__body" style="grid-column:1 / -1; display: flex; flex-direction: column; align-items: center; text-align: center;">
+                <p class="bio-panel__text">ዮናስ በአዲስ አበባ የቴክኖሎጂ፣ የትምህርት እና የስራ ፈጠራ መድረኮች ላይ በስፋት ይታያል። ለምሳሌ በአዲስ አበባ ሳይንስ እና ቴክኖሎጂ ዩኒቨርሲቲ (AASTU) በተካሄደው Generations Tech Fest 2026 ላይ እንደ ተናጋሪ ተሳትፏል፤ ከሌሎች የኦፕን ሶርስ ፈጣሪዎች፣ የቴክኖሎጂ መስራቾች እና የ AI ገንቢዎች ጋር በመድረኩ ላይ በመቀናጀት ራስን በራስ የመገንባት ቴክኖሎጂ ትምህርትን ያበረታታል።</p>
+                <!-- የፋይል ስም ስህተት ተስተካክሏል (yoni4.jpg) -->
+                <img src="yoni4.png" alt="ዮናስ በመድረክ ላይ" class="crs">
+            </div>
+        </div>
+    </section>
+
+    
+    <section id="contact" class="chapter chapter--end" aria-labelledby="contactHeading">
+        <p class="chapter__eyebrow">ምዕራፍ 04 — የተማሪዎችና ደንበኞች አስተያየት</p>
+        <h2 id="contactHeading" class="chapter__title">ሰዎች ምን ይላሉ?</h2>
+
+        <div class="testimonials-grid">
+            <article class="testimonial-card">
+                <div class="testimonial-card__header">
+                    <div class="testimonial-card__avatar">1</div>
+                    <div>
+                        <h3>ሀብታሙ በቀለ</h3>
+                        <span class="testimonial-card__role">የቪዲዮ ኤዲቲንግ ተማሪ</span>
+                    </div>
+                </div>
+                <p>"ከዚህ በፊት ብዙ ኮርሶችን አይቻለሁ፤ ነገር ግን እንደ ዮናስ በተግባር እና በቀላል ቋንቋ የሚያስተምር አላገኘሁም። በአጭር ጊዜ ውስጥ ፍሪላንስ ላይ ስራ መጀመር ችያለሁ!"</p>
+            </article>
+
+            <article class="testimonial-card">
+                <div class="testimonial-card__header">
+                    <div class="testimonial-card__avatar">2</div>
+                    <div>
+                        <h3>ሌሊሳ ዲንቃ</h3>
+                        <span class="testimonial-card__role">የግራፊክ ዲዛይን ተማሪ</span>
+                    </div>
+                </div>
+                <p>"ክተት በክረምት ቡት ካምፕ ላይ ተሳትፌ ትልቅ እውቀት አግኝቻለሁ። በተለይ ዲሲፕሊን እና ጊዜ አጠቃቀም ላይ የሰጠን ምክሮች አመለካከቴን ቀይረውታል።"</p>
+            </article>
+
+            <article class="testimonial-card">
+                <div class="testimonial-card__header">
+                    <div class="testimonial-card__avatar">3</div>
+                    <div>
+                        <h3>Michael Assefa</h3>
+                        <span class="testimonial-card__role">የማርኬቲንግ ደንበኛ</span>
+                    </div>
+                </div>
+                <p>"ከዮናስ ጋር በኤጀንሲ ስራዎች ላይ አብረን ሰርተናል። ለስራው ያለው ቁርጠኝነት እና የማርኬቲንግ ስትራቴጂው በሽያጮቻችን ላይ ከፍተኛ ለውጥ አምጥቷል።"</p>
+            </article>
+
+             <article class="testimonial-card">
+                <div class="testimonial-card__header">
+                    <div class="testimonial-card__avatar">4</div>
+                    <div>
+                        <h3>ሰላማዊት አሰፋ</h3>
+                        <span class="testimonial-card__role">የረድኤት አልባሳት መስራች</span>
+                    </div>
+                </div>
+                <p>"ከዮናስ እና ከቡድኑ ጋር በዲጂታል ማርኬቲንግ ላይ አብረን ሰርተናል። ለድርጅታችን ያዘጋጁት የሶሻል ሚዲያ ስትራቴጂ እና ማስታወቂያዎች በሽያጮቻችን ላይ ያመጡት ለውጥ አስገራሚ ነው። ለስራው ያለው ቁርጠኝነት በጣም ፕሮፌሽናል ነው!"</p>
+            </article>
+
+             <article class="testimonial-card">
+                <div class="testimonial-card__header">
+                    <div class="testimonial-card__avatar">5</div>
+                    <div>
+                        <h3>ዮናታን ተስፋዬ</h3>
+                        <span class="testimonial-card__role">የዩኒቨርሲቲ ተማሪ</span>
+                    </div>
+                </div>
+                <p>"በ'ክተት በክረምት' 12 ሳምንት ቡት ካምፕ ላይ መሳተፌ በህይወቴ ከወሰድኳቸው ምርጥ ውሳኔዎች አንዱ ነው። ክህሎት ብቻ ሳይሆን ያገኘሁት፣ ያን ክህሎት ተጠቅሜ እንዴት ገቢ መፍጠር እንደምችል ጭምር ነው።"</p>
+            </article>
+             <article class="testimonial-card">
+                <div class="testimonial-card__header">
+                    <div class="testimonial-card__avatar">6</div>
+                    <div>
+                        <h3>ኤልሳቤጥ ግርማ</h3>
+                        <span class="testimonial-card__role">የይዘት ፈጣሪ (Content Creator)</span>
+                    </div>
+                </div>
+                <p>"የዮናስ የዩቲዩብ ቪዲዮዎች የሶሻል ሚዲያ ሱስን እንድሰብር እና በጊዜዬ በአግባቡ እንድጠቀም ትልቅ ተፅዕኖ ፈጥረውብኛል። በተለይ ስለ ዲሲፕሊን እና ትኩረት (Focus) የሰራቸው ቪዲዮዎች አመለካከቴን ሙሉ በሙሉ ቀይረውታል።"</p>
+            </article>
+        </div>
+
+        <!-- አዲስ የቀረበ፦ የኮንታክት እና የመልዕክት መላኪያ ክፍል -->
+    <section id="contact-details" class="chapter" aria-labelledby="contactInfoHeading">
+        <p class="chapter__eyebrow">ቀጥታ ግንኙነት</p>
+        <h2 id="contactInfoHeading" class="chapter__title">ያግኙን / Contact Us</h2>
+        <div class="contact-grid">
+            <div class="contact-card">
+                <div class="contact-card__icon">📞</div>
+                <h3>ስልክ ቁጥር</h3>
+                <p><a href="tel:+251911223344" class="contact-link">+251 911 22 33 44</a></p>
+            </div>
+            <div class="contact-card">
+                <div class="contact-card__icon">✉️</div>
+                <h3>ኢሜይል አድራሻ</h3>
+                <p><a href="mailto:contact@yonasmoh.com" class="contact-link">contact@yonasmoh.com</a></p>
+            </div>
+        </div>
+    </section>
+
+        <div class="bio-panel" style="margin-top: 40px;">
+            <div class="bio-panel__body" style="grid-column:1 / -1; text-align: center;">               
+                <p style="color: var(--text-3); font-size: 0.9rem; margin-bottom: 15px; font-family: var(--font-utility); letter-spacing: 0.1em;">CONNECT WITH YONAS MOH</p>
+                <div class="social-row">
+                    <a href="https://www.youtube.com/@yonasmoh" target="_blank" rel="noopener" class="social-row__link" aria-label="YouTube">
+                        <svg viewBox="0 0 24 24" width="20" height="20" aria-hidden="true"><path fill="currentColor" d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/></svg>
+                    </a>
+                    <a href="https://t.me/mohanbessa" target="_blank" rel="noopener" class="social-row__link" aria-label="Telegram">
+                        <svg viewBox="0 0 24 24" width="20" height="20" aria-hidden="true"><path fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" d="m3.5 12.5 16-8-3 16-5.3-4.2-2.7 2.6v-3.6l8-7.4-10 6.2Z"/></svg>
+                    </a>
+                    <a href="https://www.instagram.com/yonasmohh/" target="_blank" rel="noopener" class="social-row__link" aria-label="Instagram">
+                        <svg viewBox="0 0 24 24" width="20" height="20" aria-hidden="true"><rect x="3.5" y="3.5" width="17" height="17" rx="5" fill="none" stroke="currentColor" stroke-width="1.6"/><circle cx="12" cy="12" r="4.2" fill="none" stroke="currentColor" stroke-width="1.6"/><circle cx="17.2" cy="6.8" r="1.1" fill="currentColor"/></svg>
+                    </a>
+                    <a href="https://www.tiktok.com/@yonasmoh" target="_blank" rel="noopener" class="social-row__link" aria-label="TikTok">
+                        <svg viewBox="0 0 24 24" width="20" height="20" aria-hidden="true"><path fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" d="M14 3.5c.5 2.2 2 3.6 4.2 3.8v2.8c-1.5 0-2.9-.5-4.2-1.4v6.1a5.1 5.1 0 1 1-4.4-5.1v2.9a2.3 2.3 0 1 0 1.7 2.2V3.5Z"/></svg>
+                    </a>
+                    <a href="https://linkedin.com" target="_blank" rel="noopener" class="social-row__link" aria-label="LinkedIn">
+                        <svg viewBox="0 0 24 24" width="20" height="20" aria-hidden="true"><path fill="currentColor" d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0z"/></svg>
+                    </a>
+                    <a href="https://x.com" target="_blank" rel="noopener" class="social-row__link" aria-label="X (Twitter)">
+                        <svg viewBox="0 0 24 24" width="20" height="20" aria-hidden="true"><path fill="currentColor" d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <footer class="site-footer">
+            <span>© <span id="year"></span> Yonas Moh</span>
+            <span class="site-footer__dot">·</span>
+            <span>ኢትዮጵያ ውስጥ የተሰራ 🇪🇹</span>
+        </footer>
+    </section>
+
+</main>
+
+<script src="script.js"></script>
+</body>
+</html>
